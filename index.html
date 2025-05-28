@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Детский оздоровительный центр "На волне"</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap">
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="/Изображения/logo.png" imgfield="img" style="max-width: 200px; width: 200px;" alt="Описание изображения">
+          <!-- Logo placeholder, to be replaced later -->
+        </div>
+        <div class="nav-links" id="navLinks">
+          <ul>
+            <li><a href="#about" class="nav-link">О нас</a></li>
+            <li><a href="#schedule" class="nav-link">Расписание</a></li>
+            <li><a href="#trainers" class="nav-link">Тренеры</a></li>
+            <li><a href="#contacts" class="nav-link">Контакты</a></li>
+          </ul>
+        </div>
+        <button class="login-btn">Вход</button>
+        <div class="burger-menu" id="burgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="special-offers">
+          <h2>Акции и спецпредложения</h2>
+          <div class="offer-card">
+            <h3>Скидка 12% на абонемент</h3>
+            <p>Только до конца мая по промокоду "МАЙ"</p>
+            <span class="offer-badge">Ограниченное предложение</span>
+          </div>
+        </div>
+        
+        <div class="registration-btn-container style="position: absolute; bottom: 20px;>
+          <button class="registration-btn">Записаться на занятие</button>
+        </div>
+        
+        <div class="carousel-container">
+          <div class="carousel" id="photoCarousel">
+            <div class="carousel-slide active">
+              <img src="/Изображения/изображение_в_хедер.webp">
+            </div>
+            <div class="carousel-slide">
+              <img src="/Изображения/изображение_в_хедер2.webp">
+            </div>
+            <div class="carousel-slide">
+              <img src="/Изображения/изображение_в_хедер3.webp">
+            </div>
+            <div class="carousel-controls">
+              <button class="prev-btn" id="prevBtn">&lt;</button>
+              <button class="next-btn" id="nextBtn">&gt;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title">О нас</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Детский оздоровительный центр "На волне" – это место, где здоровье и радость детей стоят на первом месте. Мы создали комфортную и безопасную среду, где каждый ребенок может развиваться физически и эмоционально.</p>
+          <p>Наша миссия – помочь детям вырасти здоровыми, активными и уверенными в себе. Мы предлагаем разнообразные программы, разработанные профессионалами в области детского здоровья и физического развития.</p>
+          <h3>Наши преимущества:</h3>
+          <ul>
+            <li>💙 Работаем по методике осознанного погружения</li>
+            <li>🤵 Опытный тренерский состав</li>
+            <li>👶 Индивидуальный подход к каждому ребёнку и мягкая адаптация</li>
+            <li>🌊 Современная четырёхступенчатая очистка воды</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <img src="/Изображения/о_нас.webp">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Section -->
+  <section id="schedule" class="schedule-section">
+    <div class="container">
+      <h2 class="section-title">Расписание</h2>
+      <div class="schedule-content">
+        <div class="schedule-tabs">
+          <button class="tab-btn active" data-day="monday">Понедельник</button>
+          <button class="tab-btn" data-day="tuesday">Вторник</button>
+          <button class="tab-btn" data-day="wednesday">Среда</button>
+          <button class="tab-btn" data-day="thursday">Четверг</button>
+          <button class="tab-btn" data-day="friday">Пятница</button>
+          <button class="tab-btn" data-day="weekend">Выходные</button>
+        </div>
+        
+        <div class="schedule-panels">
+          <div class="schedule-panel active" id="monday">
+            <div class="schedule-item">
+              <span class="time">09:00 - 10:00</span>
+              <div class="class-info">
+                <h4>Группа "Малыши" (3-4 года)</h4>
+                <p>Развивающие игры в воде</p>
+              </div>
+              <span class="trainer">Елена П.</span>
+            </div>
+            <div class="schedule-item">
+              <span class="time">10:30 - 11:30</span>
+              <div class="class-info">
+                <h4>Группа "Дельфины" (5-6 лет)</h4>
+                <p>Обучение плаванию</p>
+              </div>
+              <span class="trainer">Андрей К.</span>
+            </div>
+            <div class="schedule-item">
+              <span class="time">15:00 - 16:00</span>
+              <div class="class-info">
+                <h4>Группа "Волна" (7-9 лет)</h4>
+                <p>Техника плавания</p>
+              </div>
+              <span class="trainer">Мария С.</span>
+            </div>
+          </div>
+          
+          <!-- Other days will be similar but with different content -->
+          <div class="schedule-panel" id="tuesday">
+            <!-- Tuesday schedule content will be shown when this tab is active -->
+          </div>
+          <!-- Additional panels for other days -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trainers Section -->
+  <section id="trainers" class="trainers-section">
+    <div class="container">
+      <h2 class="section-title">Тренеры</h2>
+      <div class="trainers-grid">
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <img src="/Изображения/Я.jpg">
+          </div>
+          <div class="trainer-info">
+            <h3>Басманов Семён</h3>
+            <p class="trainer-position">Тренер дошкольного образования</p>
+            <p>Опыт работы с детьми: 1 год</p>
+            <p>Мастер спорта по плаванию, специализируется на работе с малышами 3-5 лет.</p>
+          </div>
+        </div>
+        
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <img src="/Изображения/Даниил_Чугунов.jpg">
+          </div>
+          <div class="trainer-info">
+            <h3>Даниил Чугунов</h3>
+            <p class="trainer-position">Тренер дошкольного образования</p>
+            <p>Опыт работы с детьми: 5 лет</p>
+            <p>Сертифицированный тренер, разработал авторскую методику обучения плаванию.</p>
+          </div>
+        </div>
+        
+        <div class="trainer-card">
+          <div class="trainer-image">
+            <img src="/Изображения/Даниил_Рудий.jpg">
+          </div>
+          <div class="trainer-info">
+            <h3>Даниил Рудий</h3>
+            <p class="trainer-position">Тренер дошкольного образования</p>
+            <p>Опыт работы с детьми: 5 лет</p>
+            <p>Специализируется на реабилитационных программах и коррекции осанки.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts Section -->
+  <section id="contacts" class="contacts-section">
+    <div class="container">
+      <h2 class="section-title">Контакты</h2>
+      <div class="contacts-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <h3>Адрес</h3>
+            <p>г. Москва, ул. Примерная, д. 123</p>
+          </div>
+          <div class="contact-item">
+            <h3>Телефон</h3>
+            <p>+7 (123) 456-78-90</p>
+          </div>
+          <div class="contact-item">
+            <h3>Email</h3>
+            <p>info@navolne.ru</p>
+          </div>
+          <div class="contact-item">
+            <h3>Режим работы</h3>
+            <p>Пн-Пт: 8:00 - 20:00</p>
+            <p>Сб-Вс: 9:00 - 18:00</p>
+          </div>
+        </div>
+        
+        <div class="contact-form">
+          <h3>Остались вопросы? Напишите нам!</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>На волне</h2>
+          <p>Детский оздоровительный центр</p>
+        </div>
+        <div class="footer-links">
+          <h3>Быстрые ссылки</h3>
+          <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#schedule">Расписание</a></li>
+            <li><a href="#trainers">Тренеры</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Мы в соцсетях</h3>
+          <div class="social-icons">
+            <a href="#" class="social-icon">VK</a>
+            <a href="#" class="social-icon">Telegram</a>
+            <a href="#" class="social-icon">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Детский оздоровительный центр "На волне". Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for registration -->
+  <div class="modal" id="registrationModal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h2>Запись на занятие</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="childName">Имя ребенка</label>
+          <input type="text" id="childName" name="childName" required>
+        </div>
+        <div class="form-group">
+          <label for="childAge">Возраст ребенка</label>
+          <input type="number" id="childAge" name="childAge" min="3" max="14" required>
+        </div>
+        <div class="form-group">
+          <label for="parentName">Имя родителя/опекуна</label>
+          <input type="text" id="parentName" name="parentName" required>
+        </div>
+        <div class="form-group">
+          <label for="parentPhone">Телефон для связи</label>
+          <input type="tel" id="parentPhone" name="parentPhone" required>
+        </div>
+        <div class="form-group">
+          <label for="lessonType">Тип занятия</label>
+          <select id="lessonType" name="lessonType" required>
+            <option value="">Выберите тип занятия</option>
+            <option value="swimming">Плавание</option>
+            <option value="aquaaerobics">Аквааэробика</option>
+            <option value="rehabilitation">Реабилитация</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-btn">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
