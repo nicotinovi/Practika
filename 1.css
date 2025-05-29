@@ -1,0 +1,29 @@
+.name::before{
+content: "Название: ";
+color: gray;
+}
+.style::before{
+content: "Стиль: ";
+color: gray;
+}
+.wall_material::before{
+content: "Материал стен: ";
+color: gray;
+}
+ 
+.square::before{
+content: "Общая площадь: ";
+color: gray;
+}
+.square::after, .living_space::after{
+content: " кв. м.";
+color: gray;
+}
+.floors::before{
+content: "Этажи: ";
+color: gray;
+}
+.living_space::before{
+content: "Жилая площадь: ";
+color: gray;
+}
